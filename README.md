@@ -1,6 +1,6 @@
-# 3D Developer Portfolio
+# Kailash Portfolio
 
-Welcome to this interactive 3D portfolio website! This project is a stunning, animated portfolio built with modern web technologies to showcase your skills, experience, and projects in a visually engaging way.
+Welcome to this interactive 3D portfolio website of mine!
 
 ## 🌟 Features
 
@@ -36,8 +36,8 @@ Make sure you have [Node.js](https://nodejs.org/) and `npm` installed on your sy
 
 1.  **Clone the repository** (or download the source code):
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/gubbysbyte/Kailash-Portfolio.git
+    cd Kailash-Portfolio
     ```
 
 2.  **Install NPM packages**:
