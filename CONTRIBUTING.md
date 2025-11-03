@@ -1,4 +1,4 @@
-# Contributing to 3D Developer Portfolio
+# Contributing to this project
 
 \ No newline at end of file
 Thank you for your interest in contributing to this project! We welcome contributions from the community. By participating, you are expected to uphold our [Code of Conduct](./CODE_OF_CONDUCT.md).
