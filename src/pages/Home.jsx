@@ -5,8 +5,10 @@ import sakura from "../assets/sakura.mp3";
 import { HomeInfo, Loader } from "../components";
 import { soundoff, soundon } from "../assets/icons";
 import { Bird, Island, Plane, Sky } from "../models";
+import { useSnapScroll } from "../hooks/useSnapScroll";
 
 const Home = () => {
+  const islandRef = useRef();
   const audioRef = useRef(new Audio(sakura));
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
@@ -14,6 +16,8 @@ const Home = () => {
   const [currentStage, setCurrentStage] = useState(1);
   const [isRotating, setIsRotating] = useState(false);
   const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+
+  useSnapScroll(islandRef, isRotating, setIsRotating, setCurrentStage);
 
   useEffect(() => {
     if (isPlayingMusic) {
@@ -88,6 +92,7 @@ const Home = () => {
           <Bird />
           <Sky isRotating={isRotating} />
           <Island
+            ref={islandRef}
             isRotating={isRotating}
             setIsRotating={setIsRotating}
             setCurrentStage={setCurrentStage}
